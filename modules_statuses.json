@@ -1,0 +1,13 @@
+{
+    "Blog": true,
+    "Transaction": true,
+    "User": true,
+    "Setting": true,
+    "Ecommerce": true,
+    "Payment": true,
+    "Admin": true,
+    "Acl": true,
+    "Api": true,
+    "Common": true,
+    "BookRevenue": true
+}

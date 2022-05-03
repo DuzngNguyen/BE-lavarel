@@ -1,0 +1,17 @@
+.order-item {
+    display: none;
+}
+.order-detail {
+    padding: 0;
+    .invoice {
+        margin: 0;
+    }
+}
+
+.action-transaction {
+    display: flex;align-items: center
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 14px !important;
+}

@@ -1,0 +1,132 @@
+@import "./../../library/bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "./../../library/bower_components/font-awesome/css/font-awesome.min.css";
+@import "./../../library/bower_components/select2/dist/css/select2.min.css";
+@import "./../../library/bower_components/jquery-ui/themes/base/jquery-ui.css";
+@import "./../../library/bower_components/bootstrap-daterangepicker/daterangepicker.css";
+@import "./../../library/dist/css/AdminLTE.css";
+@import "./../../library/dist/css/skins/_all-skins.min.css";
+@import "./../../library/plugins/pace/pace.min.css";
+@import "./../../library/plugins/iCheck/all.css";
+@import "components/inc_loading";
+@import "components/inc_loading_v2";
+@import "components/loading/inc_loading_v1";
+@import "components/inc_transaction";
+
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+.fix-top-submit {
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &.fix-top {
+        position: fixed;
+        top: 0;
+        width: calc(100% - 230px);
+        z-index: 9;
+        border-bottom: 2px solid #dedede;
+    }
+}
+
+.title-heading-4 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    .flat-red {
+        position: absolute; opacity: 0;
+    }
+    .span-desc {
+        margin-left: 5px;
+    }
+}
+
+.text-red {
+    color: red;
+    font-size: 12px;
+}
+
+.a-img-thumbnail {
+    display: block;
+
+    img {
+        width: 60px;
+        height: 60px;
+        max-width: 100%;
+    }
+}
+
+.char_counter {
+    position: absolute;
+    right: 10px;
+    color: #00a65a;
+}
+
+.block-images {
+    > div {
+        margin-bottom: 10px;
+
+        .img-thumbnail {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .box-input-upload {
+        position: relative;
+
+        input {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            filter: alpha(opacity=0);
+        }
+    }
+}
+
+.list-categories {
+    a {
+        position: relative;
+        padding: 0 3px;
+
+        &:before {
+            content: ',';
+            position: absolute;
+            right: 0;
+        }
+
+        &:last-child {
+            &:before {
+                content: '';
+            }
+        }
+    }
+}
+
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 60%;
+    li {
+        margin: 0 3px 3px 3px;
+        padding: 5px 5px 5px 15px;
+        height: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+        span {
+            position: absolute;
+            margin-left: -15px;
+            margin-top: 2px
+        }
+    }
+}

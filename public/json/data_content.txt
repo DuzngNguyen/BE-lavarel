@@ -1,0 +1,195 @@
+<p>C&aacute;c t&iacute;nh năng cơ bản của đồ &aacute;n</p>
+
+<div class="widget-toc">
+<p class="toc-title">Mục lục</p>
+
+<ol>
+	<li><a href="#Đối+với+admin+(+Admin+)">Đối với admin ( Admin )</a>
+
+	<ol>
+		<li><a href="#Quản+lý+danh+mục+sản+phẩm">Quản l&yacute; danh mục sản phẩm</a></li>
+		<li><a href="#Quản+lý+sản+phẩm">Quản l&yacute; sản phẩm</a></li>
+		<li><a href="#Quản+lý+menu+bài+viết">Quản l&yacute; menu b&agrave;i viết</a></li>
+		<li><a href="#Quản+lý+bài+viết">Quản l&yacute; b&agrave;i viết</a></li>
+		<li><a href="#Quản+lý+thành+viên">Quản l&yacute; th&agrave;nh vi&ecirc;n</a></li>
+		<li><a href="#Quản+lý+đơn+hàng">Quản l&yacute; đơn h&agrave;ng</a></li>
+		<li><a href="#Thống+kê">Thống k&ecirc;</a></li>
+	</ol>
+	</li>
+	<li><a href="#Đối+với+người+dùng+(+User)">Đối với người d&ugrave;ng ( User)</a>
+	<ol>
+		<li><a href="#Trang+chủ">Trang chủ</a></li>
+		<li><a href="#Danh+mục+sản+phẩm">Danh mục sản phẩm</a></li>
+		<li><a href="#Chi+tiết+sản+phẩm">Chi tiết sản phẩm</a></li>
+		<li><a href="#Menu+bài+viết">Menu b&agrave;i viết</a></li>
+		<li><a href="#Bài+viết">B&agrave;i viết</a></li>
+		<li><a href="#Đăng+ký">Đăng k&yacute;</a></li>
+		<li><a href="#Đăng+nhập">Đăng nhập</a></li>
+		<li><a href="#Giỏ+hàng">Giỏ h&agrave;ng</a></li>
+		<li><a href="#Thanh+toán">Thanh to&aacute;n</a></li>
+		<li><a href="#Quản+lý+đơn+hàng">Quản l&yacute; đơn h&agrave;ng</a></li>
+		<li><a href="#Cập+nhật+thông+tin">Cập nhật th&ocirc;ng tin</a></li>
+	</ol>
+	</li>
+	<li><a href="#Đối+với+khách+hàng+(Khách+chưa+đăng+nhập">Đối với kh&aacute;ch h&agrave;ng (Kh&aacute;ch chưa đăng nhập</a></li>
+</ol>
+</div>
+
+<h2 id="Đối+với+admin+(+Admin+)">Đối với admin ( Admin )</h2>
+
+<ul>
+	<li>Đăng nhập để c&oacute; thể v&agrave;o hệ thống</li>
+</ul>
+
+<h3 id="Quản+lý+danh+mục+sản+phẩm">Quản l&yacute; danh mục sản phẩm</h3>
+
+<ul>
+	<li>Danh s&aacute;ch danh mục sản phẩm</li>
+	<li>Lọc, t&igrave;m kiếm</li>
+	<li>Sửa danh mục</li>
+	<li>Xo&aacute; danh mục</li>
+	<li>Th&ecirc;m mới danh mục</li>
+</ul>
+
+<h3 id="Quản+lý+sản+phẩm">Quản l&yacute; sản phẩm</h3>
+
+<ul>
+	<li>Danh s&aacute;ch sản phẩm</li>
+	<li>Th&ecirc;m mới sản phẩm</li>
+	<li>Lọc sản phẩm</li>
+	<li>Cập nhật sản phẩm</li>
+	<li>Xo&aacute; sản phẩm</li>
+</ul>
+
+<h3 id="Quản+lý+menu+bài+viết">Quản l&yacute; menu b&agrave;i viết</h3>
+
+<ul>
+	<li>Danh s&aacute;ch menu b&agrave;i viết</li>
+	<li>Lọc, t&igrave;m kiếm menu b&agrave;i viết</li>
+	<li>Th&ecirc;m mới menu b&agrave;i viết</li>
+	<li>Cập nhật menu b&agrave;i viết</li>
+	<li>Xo&aacute; menu b&agrave;i viết</li>
+</ul>
+
+<h3 id="Quản+lý+bài+viết">Quản l&yacute; b&agrave;i viết</h3>
+
+<ul>
+	<li>Danh s&aacute;ch b&agrave;i viết</li>
+	<li>Th&ecirc;m mới b&agrave;i viết</li>
+	<li>Lọc, t&igrave;m kiếm b&agrave;i viết</li>
+	<li>Sửa b&agrave;i viết</li>
+	<li>Xo&aacute; b&agrave;i viết</li>
+</ul>
+
+<h3 id="Quản+lý+thành+viên">Quản l&yacute; th&agrave;nh vi&ecirc;n</h3>
+
+<ul>
+	<li>Danh s&aacute;ch th&agrave;nh vi&ecirc;n</li>
+	<li>BLock th&agrave;nh vi&ecirc;n</li>
+	<li>Xo&aacute; th&agrave;nh vi&ecirc;n</li>
+	<li>Lọc, t&igrave;m kiếm th&agrave;nh vi&ecirc;n</li>
+</ul>
+
+<h3 id="Quản+lý+đơn+hàng">Quản l&yacute; đơn h&agrave;ng</h3>
+
+<ul>
+	<li>Danh s&aacute;ch đơn h&agrave;ng</li>
+	<li>Lọc đơn h&agrave;ng theo trạng th&aacute;i, kh&aacute;ch h&agrave;ng mua</li>
+	<li>Xem chi tiết đơn h&agrave;ng</li>
+	<li>Cập nhật đơn h&agrave;ng</li>
+	<li>Xo&aacute; đơn h&agrave;ng</li>
+</ul>
+
+<h3 id="Thống+kê">Thống k&ecirc;</h3>
+
+<ul>
+	<li>Doanh thu ng&agrave;y</li>
+	<li>Doanh thu tuần</li>
+	<li>Doanh thu th&aacute;ng</li>
+	<li>Doanh thu năm</li>
+</ul>
+
+<h2 id="Đối+với+người+dùng+(+User)">Đối với người d&ugrave;ng ( User)</h2>
+
+<h3 id="Trang+chủ">Trang chủ</h3>
+
+<ul>
+	<li>Xem danh s&aacute;ch sản phẩm được hiển thị tr&ecirc;n trang chủ</li>
+	<li>C&oacute; thể c&oacute; hoạc kh&ocirc;ng mua h&agrave;ng ở trang chủ</li>
+	<li>T&igrave;m kiếm sản phẩm</li>
+</ul>
+
+<h3 id="Danh+mục+sản+phẩm">Danh mục sản phẩm</h3>
+
+<ul>
+	<li>Xem danh s&aacute;ch sản phẩm hiển thị</li>
+	<li>Lọc, t&igrave;m kiếm sản phẩm theo nhiều ti&ecirc;u ch&iacute; như gi&aacute;, t&ecirc;n sản phẩm, sắp xếp mới, cũ nhất</li>
+	<li>C&oacute; thể c&oacute; hoạc kh&ocirc;ng mua h&agrave;ng ở phần danh mục</li>
+</ul>
+
+<h3 id="Chi+tiết+sản+phẩm">Chi tiết sản phẩm</h3>
+
+<ul>
+	<li>Xem th&ocirc;ng tin chi tiết sản phẩm</li>
+	<li>Mua h&agrave;ng</li>
+	<li>Xem c&aacute;c sản phẩm v&agrave; th&ocirc;ng tin li&ecirc;n quan của sản phẩm</li>
+</ul>
+
+<h3 id="Menu+bài+viết">Menu b&agrave;i viết</h3>
+
+<ul>
+	<li>Xem danh s&aacute;ch b&agrave;i viết thuộc menu đang click</li>
+</ul>
+
+<h3 id="Bài+viết">B&agrave;i viết</h3>
+
+<ul>
+	<li>Xem chi tiết b&agrave;i viết</li>
+	<li>Xem th&ocirc;ng tin b&agrave;i viết li&ecirc;n quan</li>
+</ul>
+
+<h3 id="Đăng+ký">Đăng k&yacute;</h3>
+
+<h3 id="Đăng+nhập">Đăng nhập</h3>
+
+<h3 id="Giỏ+hàng">Giỏ h&agrave;ng</h3>
+
+<ul>
+	<li>Xem danh s&aacute;ch đơn h&agrave;ng</li>
+	<li>Cập nhật số lượng đơn h&agrave;ng</li>
+	<li>Huỷ đơn h&agrave;ng</li>
+	<li>Tiến h&agrave;nh thanh to&aacute;n đơn h&agrave;ng</li>
+</ul>
+
+<h3 id="Thanh+toán">Thanh to&aacute;n</h3>
+
+<ul>
+	<li>Tiến h&agrave;nh thanh to&aacute;n đơn h&agrave;ng</li>
+</ul>
+
+<h3 id="Quản+lý+đơn+hàng">Quản l&yacute; đơn h&agrave;ng</h3>
+
+<ul>
+	<li>Th&agrave;nh vi&ecirc;n c&oacute; thể xem đơn h&agrave;ng của m&igrave;nh</li>
+	<li>Xem trạng th&aacute;i đơn h&agrave;ng</li>
+</ul>
+
+<h3 id="Cập+nhật+thông+tin">Cập nhật th&ocirc;ng tin</h3>
+
+<ul>
+	<li>Cập nhật th&ocirc;ng tin c&aacute; nh&acirc;n như email, sđt, avatar địa chỉ...</li>
+</ul>
+
+<h2 id="Đối+với+khách+hàng+(Khách+chưa+đăng+nhập">Đối với kh&aacute;ch h&agrave;ng (Kh&aacute;ch chưa đăng nhập</h2>
+
+<p>Kh&aacute;ch h&agrave;ng c&oacute; thể xem to&agrave;n bộ c&aacute;c th&ocirc;ng tin của sản phẩm, b&agrave;i viết nhưng sẽ bị hạn chế bởi 1 số t&iacute;nh năng bắt buộc phải đăng nhập.&nbsp;</p>
+
+<ul>
+	<li>Xem danh s&aacute;ch sản phẩm</li>
+	<li>Chi tiết sản phẩm</li>
+	<li>Mua h&agrave;ng</li>
+	<li>Thanh to&aacute;n</li>
+	<li>Xem danh s&aacute;ch v&agrave; chi tiết b&agrave;i viết</li>
+</ul>
+
+<p>&nbsp;</p>

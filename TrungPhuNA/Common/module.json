@@ -1,0 +1,13 @@
+{
+    "name": "Common",
+    "alias": "common",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "TrungPhuNA\\Common\\Providers\\CommonServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

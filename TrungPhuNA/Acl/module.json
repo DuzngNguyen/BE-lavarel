@@ -1,0 +1,13 @@
+{
+    "name": "Acl",
+    "alias": "acl",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "TrungPhuNA\\Acl\\Providers\\AclServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

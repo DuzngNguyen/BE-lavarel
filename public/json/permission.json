@@ -1,0 +1,302 @@
+[
+    {
+        "name" : "user_index",
+        "guard_name": "admins",
+        "description": "Danh sách khách hàng",
+        "group_permission": 2
+    },
+    {
+        "name" : "user_create",
+        "guard_name": "admins",
+        "description": "Thêm mới khách hàng",
+        "group_permission": 2
+    },
+    {
+        "name" : "user_update",
+        "guard_name": "admins",
+        "description": "Cập nhật khách hàng",
+        "group_permission": 2
+    },
+    {
+        "name" : "user_info",
+        "guard_name": "admins",
+        "description": "Thông tin khách hàng",
+        "group_permission": 2
+    },
+    {
+        "name" : "user_delete",
+        "guard_name": "admins",
+        "description": "Xoá khách hàng",
+        "group_permission": 2
+    },
+    {
+        "name" : "tag_index",
+        "guard_name": "admins",
+        "description": "danh sách tags",
+        "group_permission": 7
+    },
+    {
+        "name" : "tag_create",
+        "guard_name": "admins",
+        "description": "Thêm mới tags",
+        "group_permission": 7
+    },
+    {
+        "name" : "tag_update",
+        "guard_name": "admins",
+        "description": "Cập nhật tags",
+        "group_permission": 7
+    },
+    {
+        "name" : "tag_delete",
+        "guard_name": "admins",
+        "description": "Xoá tags",
+        "group_permission": 7
+    },
+    {
+        "name" : "menu_index",
+        "guard_name": "admins",
+        "description": "Danh sách menus",
+        "group_permission": 8
+    },
+    {
+        "name" : "menu_create",
+        "guard_name": "admins",
+        "description": "Thêm mới menus",
+        "group_permission": 8
+    },
+    {
+        "name" : "menu_update",
+        "guard_name": "admins",
+        "description": "Cập nhật menus",
+        "group_permission": 8
+    },
+    {
+        "name" : "menu_delete",
+        "guard_name": "admins",
+        "description": "Xoá menus",
+        "group_permission": 8
+    },
+    {
+        "name" : "article_index",
+        "guard_name": "admins",
+        "description": "Danh sách articles",
+        "group_permission": 9
+    },
+    {
+        "name" : "article_create",
+        "guard_name": "admins",
+        "description": "Thêm mới articles",
+        "group_permission": 9
+    },
+    {
+        "name" : "article_update",
+        "guard_name": "admins",
+        "description": "Cập nhật articles",
+        "group_permission": 9
+    },
+    {
+        "name" : "article_delete",
+        "guard_name": "admins",
+        "description": "Xoá articles",
+        "group_permission": 9
+    },
+    {
+        "name" : "attribute_index",
+        "guard_name": "admins",
+        "description": "Danh sách attributes",
+        "group_permission": 3
+    },
+    {
+        "name" : "attribute_create",
+        "guard_name": "admins",
+        "description": "Thêm mới attributes",
+        "group_permission": 3
+    },
+    {
+        "name" : "attribute_update",
+        "guard_name": "admins",
+        "description": "Cập nhật attributes",
+        "group_permission": 3
+    },
+    {
+        "name" : "attribute_delete",
+        "guard_name": "admins",
+        "description": "Xoá attributes",
+        "group_permission": 3
+    },
+    {
+        "name" : "keyword_index",
+        "guard_name": "admins",
+        "description": "Danh sách keywords",
+        "group_permission": 4
+    },
+    {
+        "name" : "keyword_create",
+        "guard_name": "admins",
+        "description": "Thêm mới keywords",
+        "group_permission": 4
+    },
+    {
+        "name" : "keyword_update",
+        "guard_name": "admins",
+        "description": "Cập nhật keywords",
+        "group_permission": 4
+    },
+    {
+        "name" : "keyword_delete",
+        "guard_name": "admins",
+        "description": "Xoá keywords",
+        "group_permission": 4
+    },
+    {
+        "name" : "product_index",
+        "guard_name": "admins",
+        "description": "Danh sách products",
+        "group_permission": 6
+    },
+    {
+        "name" : "product_create",
+        "guard_name": "admins",
+        "description": "Thêm mới products",
+        "group_permission": 6
+    },
+    {
+        "name" : "product_update",
+        "guard_name": "admins",
+        "description": "Cập nhật products",
+        "group_permission": 6
+    },
+    {
+        "name" : "product_delete",
+        "guard_name": "admins",
+        "description": "Xoá products",
+        "group_permission": 6
+    },
+    {
+        "name" : "product_delete_image",
+        "guard_name": "admins",
+        "description": "Xoá image products",
+        "group_permission": 6
+    },
+    {
+        "name" : "product_search",
+        "guard_name": "admins",
+        "description": "Search products",
+        "group_permission": 6
+    },
+    {
+        "name" : "product_info",
+        "guard_name": "admins",
+        "description": "products info",
+        "group_permission": 6
+    },
+    {
+        "name" : "file_index",
+        "guard_name": "admins",
+        "description": "Danh sách files",
+        "group_permission": 20
+    },
+    {
+        "name" : "file_create",
+        "guard_name": "admins",
+        "description": "Thêm mới files",
+        "group_permission": 20
+    },
+    {
+        "name" : "file_update",
+        "guard_name": "admins",
+        "description": "Cập nhật files",
+        "group_permission": 20
+    },
+    {
+        "name" : "file_delete",
+        "guard_name": "admins",
+        "description": "Xoá files",
+        "group_permission": 20
+    },
+    {
+        "name" : "transaction_index",
+        "guard_name": "admins",
+        "description": "Danh sách transactions",
+        "group_permission": 21
+    },
+    {
+        "name" : "transaction_create",
+        "guard_name": "admins",
+        "description": "Thêm mới transactions",
+        "group_permission": 21
+    },
+    {
+        "name" : "transaction_update",
+        "guard_name": "admins",
+        "description": "Cập nhật transactions",
+        "group_permission": 21
+    },
+    {
+        "name" : "transaction_delete",
+        "guard_name": "admins",
+        "description": "Xoá transactions",
+        "group_permission": 21
+    },
+    {
+        "name" : "role_index",
+        "guard_name": "admins",
+        "description": "Danh sách roles",
+        "group_permission": 13
+    },
+    {
+        "name" : "role_create",
+        "guard_name": "admins",
+        "description": "Thêm mới roles",
+        "group_permission": 13
+    },
+    {
+        "name" : "role_update",
+        "guard_name": "admins",
+        "description": "Cập nhật roles",
+        "group_permission": 13
+    },
+    {
+        "name" : "role_delete",
+        "guard_name": "admins",
+        "description": "Xoá roles",
+        "group_permission": 13
+    },
+    {
+        "name" : "permission_index",
+        "guard_name": "admins",
+        "description": "Danh sách permissions",
+        "group_permission": 14
+    },
+    {
+        "name" : "permission_create",
+        "guard_name": "admins",
+        "description": "Thêm mới permissions",
+        "group_permission": 14
+    },
+    {
+        "name" : "permission_update",
+        "guard_name": "admins",
+        "description": "Cập nhật permissions",
+        "group_permission": 14
+    },
+    {
+        "name" : "permission_delete",
+        "guard_name": "admins",
+        "description": "Xoá permissions",
+        "group_permission": 14
+    },
+    {
+        "name" : "setting_list",
+        "guard_name": "admins",
+        "description": "Danh sách cấu hình setting",
+        "group_permission": 22
+    },
+    {
+        "name" : "dashboard",
+        "guard_name": "admins",
+        "description": "Tổng quan",
+        "group_permission": 23
+    }
+]

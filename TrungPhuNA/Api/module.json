@@ -1,0 +1,13 @@
+{
+    "name": "Api",
+    "alias": "api",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "TrungPhuNA\\Api\\Providers\\ApiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

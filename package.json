@@ -1,0 +1,36 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.8"
+    },
+    "dependencies": {
+        "@fullcalendar/core": "^5.8.0",
+        "@fullcalendar/daygrid": "^5.8.0",
+        "admin-lte": "^3.1.0",
+        "bootstrap3": "^3.3.5",
+        "chart.js": "^3.4.1",
+        "daterangepicker": "^3.1.0",
+        "firebase": "^9.6.3",
+        "highcharts": "^9.3.2",
+        "jquery2": "npm:jquery@^2.2.4",
+        "moment": "^2.29.1",
+        "sass-loader": "^11.0.1",
+        "sweetalert2": "^11.3.0",
+        "toastr": "^2.1.4",
+        "tui-calendar": "^1.13.1",
+        "wowjs": "^1.1.3"
+    }
+}
