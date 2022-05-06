@@ -10,6 +10,7 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = [];
+    protected $guarded = [''];
     
     protected static function newFactory()
     {
