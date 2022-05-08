@@ -4,13 +4,219 @@
     <list default="true" id="858346d0-dab3-4791-aae8-8270d4dbcfa9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/laravel-admin-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-admin-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Entities/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Entities/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Database/Migrations/2021_04_23_171709_create_pages_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Database/Migrations/2022_01_16_131502_create_expenditures_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Http/Controllers/Ecommerce/AdminProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Http/Controllers/Ecommerce/AdminProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/attribute/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/attribute/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/attribute/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/attribute/update.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/file/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/file/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/file/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/file/update.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product_item/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product_item/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product_item/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/product_item/update.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/type/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/type/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/type/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/ecommerce/type/update.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/user/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Resources/views/pages/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Admin/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Admin/Routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrungPhuNA/Api/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Api/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CORS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CORS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modules.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modules.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Api/Transformers/CategoryCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/TrungPhuNA/Api/Transformers/CategoryCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Config/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Console/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Migrations/2021_03_31_153958_create_menus_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Migrations/2021_03_31_154003_create_tags_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Migrations/2021_03_31_154007_create_articles_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Migrations/2021_09_11_175508_create_articles_relate_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Seeders/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/Seeders/BlogDatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Database/factories/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Entities/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Entities/Article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Entities/ArticleRelate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Entities/Menu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Entities/Tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Http/Controllers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Http/Controllers/BlogController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Http/Middleware/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Http/Requests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Providers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Providers/BlogServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/lang/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/views/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/views/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Resources/views/layouts/master.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Routes/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Tests/Feature/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/Tests/Unit/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/module.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Blog/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_04_22_060949_create_attributes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_04_22_104814_create_products_attributes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_04_22_152051_create_products_prices_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_04_28_073139_create_products_item_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_04_30_032838_create_products_type_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_04_30_042927_create_products_type_multiple_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Ecommerce/Database/Migrations/2021_05_04_200823_create_files_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Config/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Console/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Database/Migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Database/Seeders/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Database/Seeders/PaymentDatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Database/factories/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Entities/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Http/Controllers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Http/Controllers/PaymentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Http/Middleware/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Http/Requests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Providers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Providers/PaymentServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/lang/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/views/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/views/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Resources/views/layouts/master.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Routes/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Tests/Feature/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/Tests/Unit/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/module.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrungPhuNA/Payment/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CrawlerCouponCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CronJobProcessDriveCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_09_18_233829_create_coupon_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_12_14_231820_create_folders_drive_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coupon/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coupon/css/koc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coupon/image/ic-currency.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coupon/image/ic-search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coupon/image/ic-time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coupon/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/05/04/2021-05-04__baocao-java-webbangiay.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/05/05/2021-05-05__baocao-webbanqao-dangthustore.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/05/06/2021-05-06__baocao-webbanmipham.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/05/24/2021-05-24__slide-bao-cao-tn-1.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/05/29/2021-05-29__chia-se-template-ban-hoa-qua-html-css-bootstrap-4-123codenet.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/05/31/2021-05-31__doantotnghiep-laravel-dienthoai-phukien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/10/04/2021-10-04__web-bds.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/2021/10/23/2021-10-23__database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/bootstrap.min.css.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/font-awesome.min.css.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/fonts/glyphicons-halflings-regular.eot?" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/fonts/glyphicons-halflings-regular.woff2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/js/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/boxed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/color_07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/fullwidth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/dark_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/images/patterns/light_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/switcher.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style_coupon/switcher/switcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/oauth-private.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/oauth-public.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/JWT.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/firebase/php-jwt/src/JWT.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Rules/RedirectRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/passport/src/Http/Rules/RedirectRule.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +246,6 @@
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/google/auth" />
       <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
-      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
@@ -80,18 +285,13 @@
       <path value="$PROJECT_DIR$/vendor/league/config" />
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/tecnickcom/tcpdf" />
-      <path value="$PROJECT_DIR$/vendor/league/uri" />
       <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/vendor/league/event" />
-      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
-      <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
@@ -101,7 +301,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
@@ -126,9 +325,7 @@
       <path value="$PROJECT_DIR$/vendor/nao-pon/flysystem-cached-extra" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
@@ -169,7 +366,6 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
-      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/vendor/swagger-api/swagger-ui" />
       <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
@@ -194,6 +390,16 @@
       <path value="$PROJECT_DIR$/vendor/mpdf/mpdf" />
       <path value="$PROJECT_DIR$/vendor/rap2hpoutre/laravel-log-viewer" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
     </include_path>
   </component>
   <component name="ProjectId" id="28dQKJvzXCxHc1pdykWihGhmu4F" />
@@ -231,11 +437,22 @@
       <option name="presentableId" value="Default" />
       <updated>1651543918651</updated>
       <workItem from="1651543921123" duration="957000" />
-      <workItem from="1651800603831" duration="7712000" />
+      <workItem from="1651800603831" duration="15668000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

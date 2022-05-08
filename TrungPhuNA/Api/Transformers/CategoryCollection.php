@@ -19,6 +19,7 @@ class CategoryCollection extends JsonResource
             'name'        => $this->c_name,
             'slug'        => $this->c_slug,
             'icon'        => $this->c_icon,
+            'avatar'      => pare_url_cms($this->c_avatar),
             'description' => $this->c_description
         ];
     }

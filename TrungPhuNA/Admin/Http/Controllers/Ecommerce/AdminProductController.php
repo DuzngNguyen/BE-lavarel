@@ -26,8 +26,8 @@ class AdminProductController extends Controller
             $query->where('pc_category_id', $cate);
         });
 
-        if($name = $request->name)
-            $products->where('pro_name','like','%'.$name.'%');
+        if ($name = $request->name)
+            $products->where('pro_name', 'like', '%' . $name . '%');
 
         $products = $products->orderByDesc('id')
             ->paginate(20);
@@ -44,14 +44,10 @@ class AdminProductController extends Controller
     public function create(Request $request)
     {
         $categories = Category::all();
-        $attributes = Attribute::all();
-        $types      = ProductType::all();
 
         if ($id = $request->copy) $product = Product::find($id);
         $viewData = [
             'categories' => $categories,
-            'attributes' => $attributes,
-            'types'      => $types,
             'product'    => $product ?? null
         ];
 
@@ -62,9 +58,8 @@ class AdminProductController extends Controller
     {
         try {
 
-            $data                       = $request->except('_token');
-            $data['pro_price']          = str_replace(',', '', $request->pro_price);
-//            $data['pro_price_children'] = str_replace(',', '', $request->pro_price_children);
+            $data              = $request->except('_token');
+            $data['pro_price'] = str_replace(',', '', $request->pro_price);
             if ($request->pro_avatar) {
                 $image = upload_image('pro_avatar');
                 if ($image['code'] == 1)
@@ -73,11 +68,8 @@ class AdminProductController extends Controller
             $product = Product::create($data);
 
             if ($product) {
-                ProductAttributeService::syncProductAttribute($product->id, $request->attributesArr);
-                ProductPriceService::syncProductPrice($product->id, $request);
                 ProductCategoryService::syncProductCategory($product->id, $request->categories);
                 ProductImageService::syncProductImages($product->id, $request->albums);
-                ProductTypeService::syncProductType($product->id, $request->products_type);
             }
 
             return redirect()->route('get_admin.product.index');
@@ -93,26 +85,17 @@ class AdminProductController extends Controller
 
     public function edit($id)
     {
-        $product          = Product::find($id);
-        $categories       = Category::all();
-        $attributes       = Attribute::all();
-        $types            = ProductType::all();
-        $attributesActive = ProductAttributeService::getListAttributeByProductId($id);
-        $categoryActive   = ProductCategoryService::getListCategoryByProductId($id);
-        $productPrice     = ProductPriceService::getProductsPriceByProductID($id);
-        $productTypes     = ProductTypeService::getProductsTypeProductID($id);
-        $images           = ProductImageService::getImagesByProductID($id);
+        $product    = Product::find($id);
+        $categories = Category::all();
+
+        $categoryActive = ProductCategoryService::getListCategoryByProductId($id);
+        $images         = ProductImageService::getImagesByProductID($id);
 
         $viewData = [
-            'categories'       => $categories,
-            'product'          => $product,
-            'types'            => $types,
-            'attributes'       => $attributes,
-            'attributesActive' => $attributesActive,
-            'categoryActive'   => $categoryActive,
-            'productTypes'     => $productTypes,
-            'productPrice'     => $productPrice,
-            'images'           => $images
+            'categories'     => $categories,
+            'product'        => $product,
+            'categoryActive' => $categoryActive,
+            'images'         => $images
         ];
 
         return view('admin::pages.ecommerce.product.update', $viewData);
@@ -122,9 +105,8 @@ class AdminProductController extends Controller
     {
         try {
 
-            $data                       = $request->except('_token','pro_avatar');
-            $data['pro_price']          = str_replace(',', '', $request->pro_price);
-//            $data['pro_price_children'] = str_replace(',', '', $request->pro_price_children);
+            $data              = $request->except('_token', 'pro_avatar');
+            $data['pro_price'] = str_replace(',', '', $request->pro_price);
             if ($request->pro_avatar) {
                 $image = upload_image('pro_avatar');
 
@@ -134,11 +116,8 @@ class AdminProductController extends Controller
             $product = Product::find($id)->update($data);
 
             if ($product) {
-                ProductAttributeService::syncProductAttribute($id, $request->attributesArr);
-                ProductPriceService::syncProductPrice($id, $request);
                 ProductImageService::syncProductImages($id, $request->albums);
                 ProductCategoryService::syncProductCategory($id, $request->categories);
-                ProductTypeService::syncProductType($id, $request->products_type);
             }
 
             return redirect()->route('get_admin.product.index');
@@ -184,12 +163,11 @@ class AdminProductController extends Controller
 
     public function info(Request $request)
     {
-        if($request->ajax())
-        {
-            $id = $request->id;
+        if ($request->ajax()) {
+            $id       = $request->id;
             $products = Product::whereIn('id', (array)$id)->get();
 
-            $html  = view('admin::pages.ecommerce.transaction.include._inc_product_info', compact('products'))->render();
+            $html = view('admin::pages.ecommerce.transaction.include._inc_product_info', compact('products'))->render();
             return response()->json([
                 'status' => 200,
                 'html'   => $html

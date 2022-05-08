@@ -34,14 +34,6 @@
                         <span class="text-danger">{{ $errors->first('address') }}</span>
                     @endif
                 </div>
-                <div class="form-group ">
-                    <label for="exampleInputEmail1">Level <span class="text-red">(*)</span></label>
-                    <select name="level" class="form-control js-select2">
-                        <option value="0">__ Chọn phân loại __</option>
-                        <option value="1" {{ ($user->level ?? 0) == 1 ? "selected" : "" }}>Admin</option>
-                        <option value="2" {{ ($user->level ?? 0) == 2 ? "selected" : "" }}>Khách</option>
-                    </select>
-                </div>
             </div>
         </div>
     </div>

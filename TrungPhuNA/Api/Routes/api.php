@@ -25,6 +25,11 @@ Route::prefix('products')->middleware('cors')->group(function () {
     Route::get('{slug}', 'ApiProductController@getProductBySlug');
 });
 
+Route::prefix('auth')->group(function () {
+    Route::post('login', 'ApiLoginController@login');
+    Route::post('register', 'ApiRegisterController@register');
+});
+
 Route::prefix('cart')->middleware('cors')->group(function () {
     Route::post('add', 'ApiShoppingCartController@index');
     Route::get('list', 'ApiShoppingCartController@show');

@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Admin;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +15,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \TrungPhuNA\Setting\Entities\Admin::insert([
+            'name'       => 'Quản Trị Viên',
+            'email'      => 'doantotnghiep@gmail.com',
+            'password'   => bcrypt(123456789),
+            'phone'      => '0986420994',
+            'address'    => 'Nghệ An',
+            'created_at' => Carbon::now()
+        ]);
     }
 }

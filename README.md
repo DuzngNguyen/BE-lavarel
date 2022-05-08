@@ -11,3 +11,7 @@ https://psdconverthtml.com/live/yourcoupon/coupon-v1/coupon-single.html#code_id_
 https://sweetalert2.github.io/#download
 
 
+
+
+Client ID: 3
+Client secret: 5bR0w0n1K435dWihxRUgfTtjJebeUNUNVbC1j2bW

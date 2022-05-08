@@ -40,25 +40,10 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="form-group ">
-                            <label for="exampleInputEmail1">Expiry date <span class="text-red">(*)</span></label>
-                            <input type="date" class="form-control" name="pro_expiry" value="{{ $product->pro_expiry ?? '' }}">
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group ">
                             <label for="exampleInputEmail1">Number <span class="text-red">(*)</span></label>
                             <input type="number" class="form-control" name="pro_number" value="{{ $product->pro_number ?? 0 }}">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="box box-warning">
-            <div class="box-header with-border">
-                <h3 class="box-title">Giá</h3>
-            </div>
-            <div class="box-body" id="box-price">
-                <div class="row">
                     <div class="form-group col-sm-3">
                         <label for="exampleInputEmail1">Giá mặc định <span class="text-red">(*)</span></label>
                         <input type="text" class="form-control js-money" name="pro_price" id="price-default"
@@ -67,90 +52,36 @@
                         @if ($errors->first('pro_price'))
                             <span class="text-danger">{{ $errors->first('pro_price') }}</span>
                         @endif
-{{--                        <p class="mt-1"><i class="text-danger">Giá mặc định ( Áp dụng với người lớn)</i></p>--}}
                     </div>
-{{--                    <div class="form-group col-sm-3">--}}
-{{--                        <label for="exampleInputEmail1">Giá đối với trẻ em</label>--}}
-{{--                        <input type="text" class="form-control js-money" name="pro_price_children"--}}
-{{--                               id="price-default-children" placeholder="" autocomplete="off"--}}
-{{--                               value="{{ old('pro_price_children', number_format($product->pro_price_children ?? 0,0,',',',')) }}">--}}
-{{--                        <p class="mt-1"><i class="text-danger">Giá trẻ em</i></p>--}}
-{{--                    </div>--}}
                 </div>
-                @if(isset($productPrice) && !$productPrice->isEmpty())
-                    @foreach($productPrice as $item)
-                        <div class="row js-row-price">
-                            <div class="form-group col-sm-3">
-                                <label for="exampleInputEmail1">Tên combo<span class="text-red">(*)</span></label>
-                                <input type="text" class="form-control" name="pro_price_name[]" placeholder=""
-                                       autocomplete="off" value="{{ $item->pp_name }}">
-                            </div>
-                            <div class="form-group col-sm-3">
-                                <label for="exampleInputEmail1">Giá <span class="text-red">(*)</span></label>
-                                <input type="text" class="form-control js-money" name="pro_price_price[]" placeholder=""
-                                       autocomplete="off" value="{{ number_format($item->pp_price,0,',',',') }}">
-                            </div>
-                            <input type="hidden" name="pro_price_id[]" value="{{ $item->id }}">
-                            <a href="" class="col-sm-3 js-delete-price">Xoá</a>
-                        </div>
-                    @endforeach
-                @endif
-{{--                <div class="row js-clone">--}}
-{{--                    <div class="form-group col-sm-3">--}}
-{{--                        <label for="exampleInputEmail1">Tên combo<span class="text-red">(*)</span></label>--}}
-{{--                        <input type="text" class="form-control" name="pro_price_name[]" placeholder=""--}}
-{{--                               autocomplete="off" value="">--}}
+            </div>
+        </div>
+
+{{--        <div class="box box-warning">--}}
+{{--            <div class="box-header with-border">--}}
+{{--                <h3 class="box-title">Album ảnh</h3>--}}
+{{--            </div>--}}
+{{--            <div class="box-body">--}}
+{{--                @if (isset($images))--}}
+{{--                    <div class="row" style="margin-bottom: 15px;">--}}
+{{--                        @foreach($images as $item)--}}
+{{--                            <div class="col-sm-2">--}}
+{{--                                <a href="{{ route('get_admin.product.delete_image', $item->id) }}" class="js-image-delete" style="display: block;">--}}
+{{--                                    <img src="{{ pare_url_file($item->pi_path) }}" style="width: 100%;height: 200px;object-fit: cover">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        @endforeach--}}
 {{--                    </div>--}}
-{{--                    <div class="form-group col-sm-3">--}}
-{{--                        <label for="exampleInputEmail1">Giá <span class="text-red">(*)</span></label>--}}
-{{--                        <input type="text" class="form-control js-money" name="pro_price_price[]" placeholder=""--}}
-{{--                               autocomplete="off" value="">--}}
+{{--                @endif--}}
+{{--                <div class="form-group">--}}
+{{--                    <div class="file-loading">--}}
+{{--                        <input id="images" type="file" name="albums[]" multiple class="file"--}}
+{{--                               data-overwrite-initial="false" data-min-file-count="0">--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-{{--                <a href="" class="js-new-price" style="display: block">Thêm combo giá</a>--}}
-            </div>
-        </div>
-        <div class="box box-warning">
-            <div class="box-header with-border">
-                <h3 class="box-title">Album ảnh</h3>
-            </div>
-            <div class="box-body">
-                @if (isset($images))
-                    <div class="row" style="margin-bottom: 15px;">
-                        @foreach($images as $item)
-                            <div class="col-sm-2">
-                                <a href="{{ route('get_admin.product.delete_image', $item->id) }}" class="js-image-delete" style="display: block;">
-                                    <img src="{{ pare_url_file($item->pi_path) }}" style="width: 100%;height: 200px;object-fit: cover">
-                                </a>
-                            </div>
-                        @endforeach
-                    </div>
-                @endif
-                <div class="form-group">
-                    <div class="file-loading">
-                        <input id="images" type="file" name="albums[]" multiple class="file"
-                               data-overwrite-initial="false" data-min-file-count="0">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box box-warning">
-            <div class="box-header with-border">
-                <h3 class="box-title">Thuộc tính</h3>
-            </div>
-            <div class="box-body">
-                @foreach($attributes  as $key => $item)
-                    <div class="form-group col-sm-3">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="attributesArr[]"
-                                       {{ in_array($item->id, $attributesActive ?? []) ? 'checked' : '' }}   value="{{ $item->id }}"><i style="color: #666" class="fa {{ $item->a_icon }}"></i> {{ $item->a_name }}
-                            </label>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
+{{--            </div>--}}
+{{--        </div>--}}
+
         <div class="box box-warning">
             <div class="box-header with-border">
                 <h3 class="box-title">Nội dung</h3>
@@ -164,23 +95,7 @@
         </div>
     </div>
     <div class="col-sm-3">
-        <div class="box box-default">
-            <div class="box-header with-border">
-                <h3 class="box-title">Phân loại</h3>
-            </div>
-            <div class="box-body">
-                <div class="form-group ">
-                    <label for="exampleInputEmail1">Name <span class="text-red">(*)</span></label>
-                    <select name="products_type[]" class="form-control js-select2" multiple>
-                        <option value="">__ Chọn phân loại __</option>
-                        @foreach($types as $item)
-                            <option
-                                value="{{ $item->id }}" {{  in_array($item->id,  $productTypes ?? []) ? "selected" : "" }}>{{ $item->pt_name }}</option>
-                        @endforeach
-                    </select>
-                </div>
-            </div>
-        </div>
+
         <div class="box box-warning">
             <div class="box-header with-border">
                 <h3 class="box-title">Tối ưu SEO</h3>

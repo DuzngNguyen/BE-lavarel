@@ -1314,17 +1314,17 @@
     },
     {
         "name": "firebase/php-jwt",
-        "version": "v6.1.1",
-        "version_normalized": "6.1.1.0",
+        "version": "v6.1.2",
+        "version_normalized": "6.1.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/firebase/php-jwt.git",
-            "reference": "e67638d067a537731e3f9c03e097c7c1b1f31fe8"
+            "reference": "c297139da7c6873dbd67cbd1093f09ec0bbd0c50"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/firebase/php-jwt/zipball/e67638d067a537731e3f9c03e097c7c1b1f31fe8",
-            "reference": "e67638d067a537731e3f9c03e097c7c1b1f31fe8",
+            "url": "https://api.github.com/repos/firebase/php-jwt/zipball/c297139da7c6873dbd67cbd1093f09ec0bbd0c50",
+            "reference": "c297139da7c6873dbd67cbd1093f09ec0bbd0c50",
             "shasum": ""
         },
         "require": {
@@ -1336,7 +1336,7 @@
         "suggest": {
             "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
         },
-        "time": "2022-04-13T23:27:14+00:00",
+        "time": "2022-04-21T14:37:18+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2334,17 +2334,17 @@
     },
     {
         "name": "laravel/passport",
-        "version": "v10.4.0",
-        "version_normalized": "10.4.0.0",
+        "version": "v10.4.1",
+        "version_normalized": "10.4.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/passport.git",
-            "reference": "5bb6637cb5bf397381be4542719ea3694c808dcd"
+            "reference": "b62b418a6d9e9aca231a587be0fc14dc55cd8d77"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/passport/zipball/5bb6637cb5bf397381be4542719ea3694c808dcd",
-            "reference": "5bb6637cb5bf397381be4542719ea3694c808dcd",
+            "url": "https://api.github.com/repos/laravel/passport/zipball/b62b418a6d9e9aca231a587be0fc14dc55cd8d77",
+            "reference": "b62b418a6d9e9aca231a587be0fc14dc55cd8d77",
             "shasum": ""
         },
         "require": {
@@ -2371,7 +2371,7 @@
             "orchestra/testbench": "^6.0|^7.0",
             "phpunit/phpunit": "^9.3"
         },
-        "time": "2022-03-30T14:42:50+00:00",
+        "time": "2022-04-16T13:38:08+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -8481,17 +8481,17 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v5.4.6",
-        "version_normalized": "5.4.6.0",
+        "version": "v5.4.8",
+        "version_normalized": "5.4.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-foundation.git",
-            "reference": "34e89bc147633c0f9dd6caaaf56da3b806a21465"
+            "reference": "ff2818d1c3d49860bcae1f2cbb5eb00fcd3bf9e2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/34e89bc147633c0f9dd6caaaf56da3b806a21465",
-            "reference": "34e89bc147633c0f9dd6caaaf56da3b806a21465",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ff2818d1c3d49860bcae1f2cbb5eb00fcd3bf9e2",
+            "reference": "ff2818d1c3d49860bcae1f2cbb5eb00fcd3bf9e2",
             "shasum": ""
         },
         "require": {
@@ -8509,7 +8509,7 @@
         "suggest": {
             "symfony/mime": "To use the file extension guesser"
         },
-        "time": "2022-03-05T21:03:43+00:00",
+        "time": "2022-04-22T08:14:12+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

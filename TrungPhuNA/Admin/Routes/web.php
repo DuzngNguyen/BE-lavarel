@@ -26,6 +26,7 @@ Route::group(['prefix' => 'laravel-filemanager','middleware' => 'checkLoginAdmin
 Route::prefix('admin')->middleware(['checkLoginAdmin','log.route'])->group(function() {
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
     Route::get('/', 'AdminController@index')->name('get_admin.index')->middleware('permission:dashboard|full');
+
     Route::prefix('user')->namespace('User')->group(function (){
         Route::get('/','AdminUserController@index')->name('get_admin.user.index')->middleware('permission:user_index|full');
         Route::get('create','AdminUserController@create')->name('get_admin.user.create')->middleware('permission:user_create|full');
@@ -38,35 +39,12 @@ Route::prefix('admin')->middleware(['checkLoginAdmin','log.route'])->group(funct
 
         Route::get('delete/{id}','AdminUserController@delete')->name('get_admin.user.delete')->middleware('permission:user_delete|full');
     });
+
     Route::prefix('contact')->namespace('User')->group(function (){
         Route::get('/','AdminContactController@index')->name('get_admin.contact.index')->middleware('permission:contact_index|full');
         Route::get('delete/{id}','AdminContactController@delete')->name('get_admin.contact.delete')->middleware('permission:contact_delete|full');
     });
 
-    Route::prefix('document')->namespace('Document')->group(function (){
-        Route::get('/','AdminDocumentController@index')->name('get_admin.document.index')->middleware('permission:document_index|full');
-        Route::get('create','AdminDocumentController@create')->name('get_admin.document.create')->middleware('permission:document_create|full');
-        Route::post('create','AdminDocumentController@store')->middleware('permission:document_create|full');
-
-        Route::get('update/{id}','AdminDocumentController@edit')->name('get_admin.document.update')->middleware('permission:document_update|full');
-        Route::post('update/{id}','AdminDocumentController@update')->middleware('permission:document_update|full');
-        Route::get('delete/{id}','AdminDocumentController@delete')->name('get_admin.document.delete')->middleware('permission:document_delete|full');
-    });
-
-        Route::prefix('business-control')->namespace('BusinessControl')->group(function (){
-        Route::get('/','AdminSalesController@index')->name('get_admin.business_control.index')->middleware('permission:business_control_index|full');
-        Route::get('create','AdminSalesController@create')->name('get_admin.business_control.create')->middleware('permission:business_control_create|full');
-        Route::post('create','AdminSalesController@store')->middleware('permission:business_control|full');
-
-        Route::get('update/{id}','AdminSalesController@edit')->name('get_admin.business_control.update')->middleware('permission:business_control_update|full');
-        Route::post('update/{id}','AdminSalesController@update')->middleware('permission:business_control_update|full');
-        Route::get('delete/{id}','AdminSalesController@delete')->name('get_admin.business_control.delete')->middleware('permission:business_control_delete|full');
-    });
-
-    Route::prefix('drive')->group(function (){
-        Route::get('/','AdminDriveController@index')->name('get_admin.drive.index')->middleware('permission:drive_index|full');
-        Route::get('delete/{id}','AdminDriveController@delete')->name('get_admin.drive.delete')->middleware('permission:drive_delete|full');
-    });
 
 
     include 'web_setting.php';

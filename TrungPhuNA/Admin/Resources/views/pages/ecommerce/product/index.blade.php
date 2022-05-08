@@ -30,7 +30,6 @@
                                 <th style="width: 100px">Hình ảnh</th>
                                 <th style="width: 40%">Sản phẩm</th>
                                 <th>Danh mục</th>
-                                <th>Biến thể</th>
                                 <th>Thao tác</th>
                             </tr>
                             @foreach($products as $item)
@@ -42,9 +41,7 @@
                                     </td>
                                     <td>
                                         <a href="">{{ $item->pro_name }}</a> <br>
-{{--                                        <p style="margin-bottom: 0">Mã SP <b class="text-danger">{{ $item->pro_code ?? 'Chưa cập nhật' }}</b></p>--}}
                                         <p style="margin-bottom: 0">Số lượng <b class="text-primary">{{ $item->pro_number }}</b></p>
-{{--                                        <p style="margin-bottom: 0">HSD <b class="text-danger">{{ $item->pro_expiry }}</b></p>--}}
                                         <p style="margin-bottom: 0">Giá <b class="text-danger">{{ number_format($item->pro_price,0,',','.') }} Vnđ</b></p>
                                     </td>
                                     <td>
@@ -56,7 +53,6 @@
                                             </p>
                                         @endif
                                     </td>
-                                    <td>{{ $item->pro_variable_total }}</td>
                                     <td>
                                         <a href="{{ route('get_admin.product.update', $item->id) }}"
                                            class="btn btn-xs btn-info"> Cập nhật</a>

@@ -21,7 +21,7 @@
                                 <th>Họ tên</th>
                                 <th>Email</th>
                                 <th>SĐT</th>
-                                <th>Level</th>
+                                <th>Address</th>
                                 <th>Ngày tạo</th>
                                 <th>Thao tác</th>
                             </tr>
@@ -38,13 +38,7 @@
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->phone }}</td>
                                     <td>
-                                        @if ($item->level === 1)
-                                            <span class="label label-danger">Admin</span>
-                                        @elseif($item->level === 2)
-                                            <span class="label label-success">Khách</span>
-                                        @else
-                                            <span class="label label-default">Mới</span>
-                                        @endif
+                                        {{ $item->address }}
                                     </td>
                                     <td>{{ $item->created_at }}</td>
                                     <td>

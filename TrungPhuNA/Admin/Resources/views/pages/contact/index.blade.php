@@ -16,6 +16,7 @@
                                 <th>Họ tên</th>
                                 <th>Email</th>
                                 <th>SĐT</th>
+                                <th>Nội dung</th>
                                 <th>Ngày tạo</th>
                                 <th>Thao tác</th>
                             </tr>
@@ -26,6 +27,7 @@
                                     </td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->phone }}</td>
+                                    <td>{{ $item->contact }}</td>
                                     <td>{{ $item->created_at }}</td>
                                     <td>
                                         <a href="{{ route('get_admin.contact.delete', $item->id) }}" class="btn btn-sm btn-danger"> Xoá</a>
