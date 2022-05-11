@@ -2,78 +2,57 @@
 
 namespace TrungPhuNA\Api\Http\Controllers;
 
-use Illuminate\Contracts\Support\Renderable;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use TrungPhuNA\Api\HelpersClass\ResponseService;
+use TrungPhuNA\Ecommerce\Entities\Order;
+use TrungPhuNA\Ecommerce\Entities\Product;
+use TrungPhuNA\Ecommerce\Entities\Transaction;
 
 class ApiShoppingCartController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     * @return Renderable
-     */
-    public function index()
+    public function saveShopping(Request $request)
     {
-        return view('api::index');
-    }
+        try {
+            DB::beginTransaction();
+            $productID    = $request->products_id;
+            $access_token = $request->header('Authorization');
+            $user         = request()->user() ?? [];
+            $product      = Product::find($productID);
 
-    /**
-     * Show the form for creating a new resource.
-     * @return Renderable
-     */
-    public function create()
-    {
-        return view('api::create');
-    }
+            $transaction = Transaction::create([
+                'tr_user_id' => $user->id,
+                'tr_total'   => $product->pro_price,
+                'tr_phone'   => $user->phone,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ]);
 
-    /**
-     * Store a newly created resource in storage.
-     * @param Request $request
-     * @return Renderable
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+            if ($transaction) {
+                Order::insert([
+                    'o_transaction_id' => $transaction->id,
+                    'o_action_id'      => $product->id,
+                    'o_qty'            => 1,
+                    'o_price'          => $product->pro_price,
+                    'created_at'       => Carbon::now()
+                ]);
+            }
 
-    /**
-     * Show the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function show($id)
-    {
-        return view('api::show');
-    }
+            $results = [
+                'transaction' => $transaction ?? [],
+                'product'     => $product ?? '',
+            ];
 
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('api::edit');
-    }
+            DB::commit();
+            return response()->json(ResponseService::getSuccess($results));
 
-    /**
-     * Update the specified resource in storage.
-     * @param Request $request
-     * @param int $id
-     * @return Renderable
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     * @param int $id
-     * @return Renderable
-     */
-    public function destroy($id)
-    {
-        //
+        } catch (\Exception $exception) {
+            DB::rollBack();
+            Log::error("API: " . $exception->getMessage() . " -- LINE: " . $exception->getLine());
+            return response()->json(ResponseService::getError("Có lỗi xẩy ra, xin vui lòng kiểm tra lại"));
+        }
     }
 }

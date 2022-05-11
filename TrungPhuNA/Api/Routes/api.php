@@ -30,8 +30,9 @@ Route::prefix('auth')->group(function () {
     Route::post('register', 'ApiRegisterController@register');
 });
 
-Route::prefix('cart')->middleware('cors')->group(function () {
+Route::prefix('cart')->middleware('cors','auth:api')->group(function () {
     Route::post('add', 'ApiShoppingCartController@index');
+    Route::post('save', 'ApiShoppingCartController@saveShopping');
     Route::get('list', 'ApiShoppingCartController@show');
 });
 
