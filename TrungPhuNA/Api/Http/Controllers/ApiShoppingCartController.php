@@ -19,16 +19,16 @@ class ApiShoppingCartController extends Controller
         try {
             DB::beginTransaction();
             $productID    = $request->products_id;
-            $access_token = $request->header('Authorization');
             $user         = request()->user() ?? [];
             $product      = Product::find($productID);
 
             $transaction = Transaction::create([
-                'tr_user_id' => $user->id,
-                'tr_total'   => $product->pro_price,
-                'tr_phone'   => $user->phone,
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
+                't_user_id'     => $user->id,
+                't_total_money' => $product->pro_price,
+                't_phone'       => $user->phone,
+                't_name'        => $user->name,
+                'created_at'    => Carbon::now(),
+                'updated_at'    => Carbon::now()
             ]);
 
             if ($transaction) {
@@ -47,6 +47,24 @@ class ApiShoppingCartController extends Controller
             ];
 
             DB::commit();
+            return response()->json(ResponseService::getSuccess($results));
+
+        } catch (\Exception $exception) {
+            DB::rollBack();
+            Log::error("API: " . $exception->getMessage() . " -- LINE: " . $exception->getLine());
+            return response()->json(ResponseService::getError("Có lỗi xẩy ra, xin vui lòng kiểm tra lại"));
+        }
+    }
+
+    public function listsTransactions(Request $request)
+    {
+        try {
+            $user = request()->user() ?? [];
+            $transactions = Transaction::where('t_user_id', $user->id)->get();
+            $results = [
+                'transactions' => $transactions ?? [],
+                'user'         => $user
+            ];
             return response()->json(ResponseService::getSuccess($results));
 
         } catch (\Exception $exception) {
